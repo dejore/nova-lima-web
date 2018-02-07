@@ -1,7 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./../node_modules/normalize.css";
+import { Provider } from "react-redux";
+import AppRouter from "./routers/AppRouter";
 import registerServiceWorker from "./registerServiceWorker";
+import store from "./store/configureStore";
+import "./../node_modules/normalize.css";
 
-ReactDOM.render(<p>Hello</p>, document.getElementById("root"));
+const jsx = (
+  <Provider store={store}>
+    <AppRouter />
+  </Provider>
+);
+ReactDOM.render(jsx, document.getElementById("root"));
 registerServiceWorker();
