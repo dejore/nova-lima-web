@@ -1,14 +1,14 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => (
   <div>
     <h1>Nova Lima</h1>
-    <NavLink to="/" activeClassName="selected">
-      Home
+    <NavLink exact to="/" activeClassName="selected">
+      Início
     </NavLink>
     <NavLink to="/adiantamento" activeClassName="selected">
-      Adiantamento
+      Adiantamento de Recursos
     </NavLink>
     <NavLink to="/vale-feira" activeClassName="selected">
       Vale Feira
