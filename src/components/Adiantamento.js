@@ -1,3 +1,3 @@
 import React from "react";
-const Adiantamento = () => <p>adiantamento</p>;
+const Adiantamento = () => <p>adiantamentos</p>;
 export default Adiantamento;
