@@ -1,22 +1,30 @@
-import { editarAdiantamento } from "./../../actions/adiantamento.js";
+import {
+  editarValor,
+  editarQtdParcelas,
+  editarJuros
+} from "./../../actions/adiantamento.js";
 import * as constants from "./../../util/actionTypes";
 
 test("edição de valor", () => {
-  const action = editarAdiantamento({ valor: 100 });
+  const action = editarValor(100);
   expect(action).toEqual({
-    type: constants.EDITAR_ADIANTAMENTO,
-    updates: {
-      valor: 100
-    }
+    type: constants.EDITAR_VALOR,
+    valor: 100
   });
 });
 
-test("edição de parcela", () => {
-  const action = editarAdiantamento({ parcelas: 2 });
+test("edição de qtdParcelas", () => {
+  const action = editarQtdParcelas(2);
   expect(action).toEqual({
-    type: constants.EDITAR_ADIANTAMENTO,
-    updates: {
-      parcelas: 2
-    }
+    type: constants.EDITAR_QTDPARCELAS,
+    qtdParcelas: 2
+  });
+});
+
+test("edição de qtdParcelas", () => {
+  const action = editarJuros(2);
+  expect(action).toEqual({
+    type: constants.EDITAR_JUROS,
+    juros: 2
   });
 });

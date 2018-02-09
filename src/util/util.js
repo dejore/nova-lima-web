@@ -1,9 +1,11 @@
 export const utilObject = {
   defaultReducerAction: { type: "@@INIT" },
   defaultAdiantamentoState: {
-    adiantamento: {
-      valor: 0,
-      parcela: 0
-    }
+    valor: 0,
+    qtdParcelas: 1,
+    juros: 200,
+    valorParcela: 0,
+    valorFinanciado: 0,
+    totalJuros: 0
   }
 };
