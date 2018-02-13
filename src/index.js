@@ -5,7 +5,7 @@ import AppRouter from './routers/AppRouter';
 import registerServiceWorker from './registerServiceWorker';
 import store from './store/configureStore';
 import './../node_modules/normalize.css';
-import './styles/style.css';
+import './styles/index.css';
 
 const jsx = (
   <Provider store={store}>
