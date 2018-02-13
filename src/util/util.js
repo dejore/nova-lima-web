@@ -1,8 +1,8 @@
 export const utilObject = {
-  defaultReducerAction: { type: "@@INIT" },
+  defaultReducerAction: { type: '@@INIT' },
   defaultAdiantamentoState: {
     valor: 0,
-    qtdParcelas: 1,
+    qtdParcelas: 2,
     juros: 200,
     valorParcela: 0,
     valorFinanciado: 0,
