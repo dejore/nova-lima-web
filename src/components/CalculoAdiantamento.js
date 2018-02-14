@@ -13,7 +13,7 @@ class CalculoAdiantamento extends React.Component {
     return (
       <div className="container">
         <div className="widget">
-          <h1 className="widget-header">CÁLCULO DE ADIANTAMENTO DE RECURSOS</h1>
+          <h1 className="widget-header">CALCULO DE ADIANTAMENTO DE RECURSOS</h1>
           <CalculoAdiantamentoForm
             {...this.props}
             onChangeSliderValor={this.onChangeSliderValor}
